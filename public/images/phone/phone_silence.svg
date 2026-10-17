@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="phoneBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#191924" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#0f0f14" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#08080a" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="glowGold" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e5c158" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#e5c158" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#phoneBg)"/>
+  <circle cx="1350" cy="540" r="280" fill="url(#glowGold)"/>
+  
+  <!-- Minimalist Phone Silhouette on the Right -->
+  <g transform="translate(1230, 360)">
+    <!-- Phone Body -->
+    <rect x="0" y="0" width="240" height="420" rx="36" fill="#14141c" stroke="#333342" stroke-width="2"/>
+    <!-- Phone Screen -->
+    <rect x="12" y="16" width="216" height="388" rx="26" fill="#0c0d12"/>
+    <!-- Speaker Notch -->
+    <line x1="95" y1="28" x2="145" y2="28" stroke="#444455" stroke-width="3" stroke-linecap="round"/>
+    <!-- Silent Icon inside phone (Bell with slash) -->
+    <circle cx="120" cy="210" r="48" fill="#1b1c24" stroke="#d4af37" stroke-width="1.5"/>
+    <!-- Bell shape -->
+    <path d="M 120,185 C 112,185 106,191 106,198 L 106,212 C 103,215 100,217 100,221 L 140,221 C 140,217 137,215 134,212 L 134,198 C 134,191 128,185 120,185 Z" fill="none" stroke="#fbf8f2" stroke-width="2"/>
+    <!-- Bell clapper -->
+    <path d="M 116,224 C 116,226 118,228 120,228 C 122,228 124,226 124,224" fill="none" stroke="#fbf8f2" stroke-width="2"/>
+    <!-- Gentle gold strike-through representing silence/peace -->
+    <line x1="94" y1="180" x2="146" y2="236" stroke="#e5c158" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Dissolving floating notification badges into tranquil light -->
+    <g opacity="0.35">
+      <circle cx="280" cy="120" r="16" fill="#3a131b" stroke="#883344" stroke-width="1"/>
+      <line x1="274" y1="120" x2="286" y2="120" stroke="#fbf8f2" stroke-width="1.5"/>
+    </g>
+    <g opacity="0.2">
+      <circle cx="-50" cy="180" r="14" fill="#3a131b"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="worshipGlow" cx="50%" cy="85%" r="75%">
+      <stop offset="0%" stop-color="#54232c" stop-opacity="0.9"/>
+      <stop offset="35%" stop-color="#2d1319" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#140f12" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#080708" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="verticalBeams" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#f5efe4" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#e5c158" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#54232c" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#worshipGlow)"/>
+  <!-- Beams radiating from stage -->
+  <polygon points="960,1080 300,0 450,0" fill="url(#verticalBeams)"/>
+  <polygon points="960,1080 650,0 800,0" fill="url(#verticalBeams)"/>
+  <polygon points="960,1080 1120,0 1270,0" fill="url(#verticalBeams)"/>
+  <polygon points="960,1080 1470,0 1620,0" fill="url(#verticalBeams)"/>
+  <!-- Radiant halo at base -->
+  <ellipse cx="960" cy="980" rx="650" ry="200" fill="#e5c158" opacity="0.12"/>
+</svg>

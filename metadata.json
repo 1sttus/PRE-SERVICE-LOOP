@@ -1,0 +1,6 @@
+{
+  "name": "Morningstar Pre-Service Experience",
+  "description": "A cinematic pre-service presentation system and broadcast control room for Morningstar Covenant International Church.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

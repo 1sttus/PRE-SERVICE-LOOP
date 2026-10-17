@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="fellowshipBg" cx="40%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#36221c" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#191519" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0b0b0e" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="bokeh1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f5efe4" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#f5efe4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bokehGold" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e5c158" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#e5c158" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#fellowshipBg)"/>
+  <!-- Warm Bokeh Orbs -->
+  <circle cx="1200" cy="350" r="160" fill="url(#bokehGold)"/>
+  <circle cx="1450" cy="520" r="220" fill="url(#bokeh1)"/>
+  <circle cx="1600" cy="280" r="120" fill="url(#bokehGold)"/>
+  <circle cx="1320" cy="700" r="180" fill="url(#bokeh1)"/>
+  <circle cx="1100" cy="580" r="100" fill="url(#bokehGold)"/>
+  <!-- Gentle organic waves indicating warmth and connection -->
+  <path d="M 0,600 Q 480,500 960,650 T 1920,550 L 1920,1080 L 0,1080 Z" fill="#1b1414" opacity="0.4"/>
+</svg>

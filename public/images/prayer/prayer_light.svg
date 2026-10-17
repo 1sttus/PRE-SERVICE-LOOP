@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="prayerBg" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#21262d" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#111317" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#090a0d" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="windowRay" x1="0%" y1="0%" x2="60%" y2="100%">
+      <stop offset="0%" stop-color="#fdfbf7" stop-opacity="0.22"/>
+      <stop offset="60%" stop-color="#e5c158" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#090a0d" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#prayerBg)"/>
+  <!-- Tall Gothic Window Light Shafts -->
+  <polygon points="120,0 260,0 950,1080 650,1080" fill="url(#windowRay)"/>
+  <polygon points="280,0 420,0 1200,1080 920,1080" fill="url(#windowRay)" opacity="0.8"/>
+  <!-- Subtle contemplative cross watermark / icon in deep distance -->
+  <line x1="1500" y1="280" x2="1500" y2="440" stroke="#d4af37" stroke-width="1.5" opacity="0.25"/>
+  <line x1="1450" y1="330" x2="1550" y2="330" stroke="#d4af37" stroke-width="1.5" opacity="0.25"/>
+</svg>

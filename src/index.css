@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+  background-color: #08090b;
+  color: #fbf8f2;
+}
+
+#root {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@layer utilities {
+  .font-serif-cormorant {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+  .font-sans-inter {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom transitions and motion presets */
+@keyframes cinematicFade {
+  0% { opacity: 0; filter: blur(4px); }
+  100% { opacity: 1; filter: blur(0px); }
+}
+
+@keyframes slowZoomFade {
+  0% { opacity: 0; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes softRiseFade {
+  0% { opacity: 0; transform: translateY(24px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes parallaxDriftFade {
+  0% { opacity: 0; transform: translateX(-16px) scale(0.98); }
+  100% { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+@keyframes lightReveal {
+  0% { opacity: 0; filter: brightness(1.6) contrast(1.1); }
+  50% { opacity: 0.8; filter: brightness(1.2); }
+  100% { opacity: 1; filter: brightness(1); }
+}
+
+@keyframes crossDissolve {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes softWipe {
+  0% { clip-path: inset(0 0 100% 0); opacity: 0.5; }
+  100% { clip-path: inset(0 0 0 0); opacity: 1; }
+}
+
+@keyframes slowZoom {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+@keyframes parallaxDrift {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-1.5%, -1%) scale(1.04); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes softRise {
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-2%) scale(1.03); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+@keyframes subtleDrift {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+.animate-cinematic-fade {
+  animation: cinematicFade 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slow-zoom-fade {
+  animation: slowZoomFade 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-soft-rise-fade {
+  animation: softRiseFade 1.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-parallax-drift-fade {
+  animation: parallaxDriftFade 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-light-reveal {
+  animation: lightReveal 2.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-cross-dissolve {
+  animation: crossDissolve 1.5s ease-in-out forwards;
+}
+
+.animate-soft-wipe {
+  animation: softWipe 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slow-zoom {
+  animation: slowZoom 40s ease-in-out infinite;
+}
+
+.animate-parallax-drift {
+  animation: parallaxDrift 35s ease-in-out infinite;
+}
+
+.animate-soft-rise {
+  animation: softRise 30s ease-in-out infinite;
+}
+
+.animate-subtle-drift {
+  animation: subtleDrift 30s ease-in-out infinite;
+}
+
+/* Custom dark scrollbar for control room */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1015;
+}
+::-webkit-scrollbar-thumb {
+  background: #232530;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #363a4d;
+}
